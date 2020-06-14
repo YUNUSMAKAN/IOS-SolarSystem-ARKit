@@ -1,4 +1,4 @@
-# IOS-SolarSystem-ARKit
+# iOS-SolarSystem-ARKit
 # Ar Kit
 
 * Integrate iOS device camera and motion features to produce augmented reality experiences in your app or game.
