@@ -19,22 +19,33 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         // Set the view's delegate
         sceneView.delegate = self
+    
+       //let myBox = SCNBox(width: 0.1, height: 0.1, length: 0.1, chamferRadius: 0.01) //Verilen miktarlar metre olarak hesaplanir.Kup olusturma islemi.
         
-        let myBox = SCNBox(width: 0.1, height: 0.1, length: 0.1, chamferRadius: 0.01) //Verilen miktarlar metre olarak hesaplanir.
+        let mySphere = creatSphere(radius: 0.1, content: "grass.png", vector: SCNVector3(0, 0.1, -1))
         
-        let boxMaterial = SCNMaterial()
+        sceneView.scene.rootNode.addChildNode(mySphere)
         
-        boxMaterial.diffuse.contents = UIImage(named: "art.scnassets/blue.png")
+        sceneView.automaticallyUpdatesLighting = true //Objeleri uc boyutlu gostermek daha kolay olur.
+    }
+    
+    func creatSphere(radius: CGFloat, content: String, vector: SCNVector3) -> SCNNode{
+        let mySphere = SCNSphere(radius: radius) //Kure olusturma islemi.
+               
+               let boxMaterial = SCNMaterial()
+               
+               boxMaterial.diffuse.contents = UIImage(named: "art.scnassets/\(content)")
+               
+               mySphere.materials = [boxMaterial]
+               
+               let node = SCNNode()
+               
+               node.position = vector
+               
+               node.geometry = mySphere
+       
+        return node
         
-        myBox.materials = [boxMaterial]
-        
-        let node = SCNNode()
-        
-        node.position = SCNVector3(0, 0.1, -0.5)
-        
-        node.geometry = myBox
-        
-        sceneView.scene.rootNode.addChildNode(node)
     }
     
     override func viewWillAppear(_ animated: Bool) {
