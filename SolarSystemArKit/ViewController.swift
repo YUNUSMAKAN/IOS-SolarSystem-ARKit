@@ -22,10 +22,18 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     
        //let myBox = SCNBox(width: 0.1, height: 0.1, length: 0.1, chamferRadius: 0.01) //Verilen miktarlar metre olarak hesaplanir.Kup olusturma islemi.
         
-        let mySphere = creatSphere(radius: 0.1, content: "grass.png", vector: SCNVector3(0, 0.1, -1))
+        //let mySphere = creatSphere(radius: 0.1, content: "grass.png", vector: SCNVector3(0, 0.1, -1))
         
-        sceneView.scene.rootNode.addChildNode(mySphere)
+        let world = creatSphere(radius: 0.1, content: "world.png", vector: SCNVector3(0, 0.2, -1))
         
+        let mars = creatSphere(radius: 0.2, content: "mars.png", vector: SCNVector3(0.5, 0.2, -1))
+        
+        let venus = creatSphere(radius: 0.15, content: "venus.png", vector: SCNVector3(1, 0.2, -1))
+        
+        sceneView.scene.rootNode.addChildNode(world)
+        sceneView.scene.rootNode.addChildNode(mars)
+        sceneView.scene.rootNode.addChildNode(venus)
+    
         sceneView.automaticallyUpdatesLighting = true //Objeleri uc boyutlu gostermek daha kolay olur.
     }
     
