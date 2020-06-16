@@ -11,3 +11,9 @@
 
 # Screen Shots
 
+<img width="431" alt="Ekran Resmi 2020-06-13 17 14 06" src="https://user-images.githubusercontent.com/58694754/84803342-8d990a00-b00a-11ea-9ede-2d34794eb7c2.png">
+<img width="344" alt="Ekran Resmi 2020-06-16 15 42 23" src="https://user-images.githubusercontent.com/58694754/84803349-8ffb6400-b00a-11ea-867c-364ab20b9be7.png">
+<img width="344" alt="Ekran Resmi 2020-06-16 19 45 38" src="https://user-images.githubusercontent.com/58694754/84803353-9093fa80-b00a-11ea-922a-0bbb53c32ef7.png">
+<img width="343" alt="Ekran Resmi 2020-06-16 19 45 58" src="https://user-images.githubusercontent.com/58694754/84803357-91c52780-b00a-11ea-9a83-68aba7b59101.png">
+<img width="344" alt="Ekran Resmi 2020-06-16 19 46 12" src="https://user-images.githubusercontent.com/58694754/84803363-92f65480-b00a-11ea-9a4f-8f5cb66112d2.png">
+
