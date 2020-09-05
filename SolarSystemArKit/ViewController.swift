@@ -34,7 +34,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         sceneView.scene.rootNode.addChildNode(mars)
         sceneView.scene.rootNode.addChildNode(venus)
     
-        sceneView.automaticallyUpdatesLighting = true //Objeleri uc boyutlu gostermek daha kolay olur.
+        sceneView.automaticallyUpdatesLighting = true
+        //Objeleri uc boyutlu gostermek daha kolay olur.
     }
     
     func creatSphere(radius: CGFloat, content: String, vector: SCNVector3) -> SCNNode{
